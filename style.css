@@ -83,11 +83,31 @@ h1, p {
 .project-item a:hover {
     text-decoration: underline;
 }
+
+.image-pair {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.hobby {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
 .image-row {
     display: flex;
     flex-wrap: wrap;
     gap: 20px; /* space between images */
     justify-content: center; /* centers the images side by side */
+
     margin-top: 20px;
 }
 
