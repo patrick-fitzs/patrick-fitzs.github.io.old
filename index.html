@@ -6,6 +6,8 @@
     <title>Patrick's Portfolio</title>
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/TagCloud@2.2.0/dist/TagCloud.min.js"></script> <!-- library for sphere animation-->
+
 </head>
 <body>
     <div class="floating-icons">
@@ -26,6 +28,7 @@
 </div>
 
     <section class="intro">
+        <!-- Skills sphere-->
         <h1 class="sectionHeadings">Welcome!</h1>
         <p>Hello, my name is Patrick.</p>
         <p>This is my personal portfolio website.</p>
@@ -50,6 +53,29 @@
         </div>
         <p>P.s.... gym, travel, and eat food (of course).</p>
 
+    </section>
+
+
+    <section class="skills-experience">
+        <div class="skills-container">
+            <!-- LEFT: Text -->
+            <div class="skills-text">
+                <h2 class="sectionHeadings">Skills and Experience</h2>
+                <p>
+                    I have experience through personal projects with both frontend and backend development.
+                    From building responsive web apps with React and Flask, to developing ML models using TensorFlow and PyTorch.
+                </p>
+                <p>
+                    I’m comfortable working with SQL/NoSQL databases, and knowledge on DevOps tools like Docker/Kubernetes, and cloud platforms like AWS along with deployment
+                    services like Heroku.
+                </p>
+                <p>
+                    I love writing clean, scalable code and solving problems efficiently — whether it's a UI layout or an algorithm in LeetCode.
+                </p>
+            </div>
+            <!-- RIGHT: Sphere -->
+            <div class="skill-sphere" id="skillSphere"></div>
+        </div>
     </section>
 
     <section class="projects">

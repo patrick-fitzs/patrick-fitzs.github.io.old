@@ -35,5 +35,20 @@ document.addEventListener("scroll", () => {
     const newColor = interpolateColor(startColor, endColor, scrollFraction);
     document.body.style.backgroundColor = newColor; // applies to body
 });
+// var with tags for tech stack
+const myTags = [
+  'JavaScript', 'HTML', 'CSS', 'Flask', 'MongoDB',
+  'Python', 'Java','Flask', 'SQL', 'Bootstrap', 'UML', 'Git', 'GitHub',
+  'Machine Learning', 'TensorFlow', 'PyTorch', 'NumPy', 'Pandas', 'Matplotlib', 'SciPy'
+];
+// sphere attributes
+const tagCloud = TagCloud('#skillSphere', myTags, {
+  radius: 180,
+  maxSpeed: 'normal',
+  initSpeed: 'normal',
+  direction: 135,
+  keep: true
+});
+
 
 
