@@ -85,13 +85,14 @@ h1, p {
 }
 .image-row {
     display: flex;
+    flex-wrap: wrap;
     gap: 20px; /* space between images */
     justify-content: center; /* centers the images side by side */
     margin-top: 20px;
 }
 
 .mlmatrix {
-    width: 350px;
+    max-width: 350px;
     height: auto; /* maintain aspect ratio */
     border-radius: 12px; /* softer edges */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /*adds a clean shadow */
