@@ -16,7 +16,7 @@ document.addEventListener("scroll", () => {
 
     // start and end colours
     const startColor = "rgb(240, 240, 240)"; // light grey
-    const endColor = "rgb(128, 128, 128)";   // soft blue
+    const endColor = "rgb(205, 210, 230)";   // soft blue
 
     // calculates the blended colour based on the scrollFraction
     const newColor = interpolateColor(startColor, endColor, scrollFraction);

@@ -55,6 +55,19 @@ h1, p {
 .floating-icons a img:hover {
     transform: scale(1.2);
 }
+/*details for the leetcode symbol*/
+.leetcode {
+    width: 50px;
+    height: 50px;
+}
+.leetcode:hover {
+    transform: scale(1.2);
+    transition: 0.3s ease;
+}
+
+.sectionHeadings {
+    font-size: 40px;
+}
 
 /*below item, a, and a:hover are for view repo links */
 .project-item {
@@ -69,4 +82,17 @@ h1, p {
 
 .project-item a:hover {
     text-decoration: underline;
+}
+.image-row {
+    display: flex;
+    gap: 20px; /* space between images */
+    justify-content: center; /* centers the images side by side */
+    margin-top: 20px;
+}
+
+.mlmatrix {
+    width: 350px;
+    height: auto; /* maintain aspect ratio */
+    border-radius: 12px; /* softer edges */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /*adds a clean shadow */
 }
