@@ -1,0 +1,72 @@
+/* includes font */
+body {
+    margin: 0;
+    font-family: 'JetBrains Mono', monospace;
+    scroll-behavior: smooth;
+    transition: background 1s ease;
+}
+/* section boxes in index */
+section {
+    min-height: 100vh;
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transition: background 1s ease;
+}
+
+/*####################################################################################*/
+/* Includes colours for each section*/
+/* removing these as they conflict with my js script*/
+
+/*.intro {*/
+/*    background: #f0f0f0;*/
+/*}*/
+/*.sideStep{*/
+/*    background: #777777;*/
+/*}*/
+/*.projects {*/
+/*    background: #e0eaff;*/
+/*}*/
+/*####################################################################################*/
+
+h1, p {
+    margin: 10px 0;
+}
+
+/* Icons with links to my github and LinkedIn*/
+.floating-icons {
+    position: fixed;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.floating-icons a img {
+    width: 32px;
+    height: 32px;
+    transition: transform 0.3s;
+}
+
+.floating-icons a img:hover {
+    transform: scale(1.2);
+}
+
+/*below item, a, and a:hover are for view repo links */
+.project-item {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.project-item a {
+    color: #333;
+    text-decoration: none;
+}
+
+.project-item a:hover {
+    text-decoration: underline;
+}
