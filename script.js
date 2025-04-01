@@ -1,3 +1,16 @@
+// script.js sound effect for cv button
+
+const cvButton = document.getElementById('cvButton');
+const popSound = new Audio('imgdumpster/deep-strange-whoosh-183845.mp3');
+// plays sound on hover (works on desktop)
+cvButton.addEventListener('mouseenter', () => {
+  popSound.play();
+});
+// plays sound on touch (for mobile)
+cvButton.addEventListener('touchstart', () => {
+  popSound.play();
+});
+
 // function to blend the two RGB colours
 function interpolateColor(color1, color2, factor) {
     // below extracts the rgb values from strings to int
@@ -22,3 +35,5 @@ document.addEventListener("scroll", () => {
     const newColor = interpolateColor(startColor, endColor, scrollFraction);
     document.body.style.backgroundColor = newColor; // applies to body
 });
+
+

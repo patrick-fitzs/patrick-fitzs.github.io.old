@@ -45,6 +45,77 @@ h1, p {
     flex-direction: column;
     gap: 10px;
 }
+/*####################################################################################*/
+/*below for the download cv feature*/
+.floating-sidebar {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.floating-sidebar a {
+    position: relative;
+    display: inline-block;
+    background: #333;
+    padding: 12px;
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: background 0.3s, transform 0.2s;
+}
+
+.floating-sidebar a:hover {
+    background: #555;
+    transform: scale(1.1);
+}
+
+.cv-icon {
+    width: 36px;
+    height: 36px;
+    border-radius: 100%;           /* ⬅️ This rounds the image */
+    object-fit: cover;            /* ⬅️ Keeps it nicely filled without distortion */
+    display: block;
+}
+
+/* Tooltip bubble */
+.tooltip {
+    position: absolute;
+    top: 50%;
+    right: 120%;
+    transform: translateY(-50%);
+    background: #222;
+    color: #fff;
+    padding: 8px 12px;
+    border-radius: 8px;
+    font-size: 14px;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease, right 0.3s ease;
+}
+
+/* Speech bubble tail */
+.tooltip::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    transform: translateY(-50%);
+    border-width: 6px;
+    border-style: solid;
+    border-color: transparent transparent transparent #222;
+}
+
+.floating-sidebar a:hover .tooltip {
+    opacity: 1;
+    right: 140%;
+}
+
+
+
+
+
+/*####################################################################################*/
 
 .floating-icons a img {
     width: 32px;
