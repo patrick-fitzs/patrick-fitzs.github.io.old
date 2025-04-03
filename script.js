@@ -43,12 +43,36 @@ const myTags = [
 ];
 // sphere attributes
 const tagCloud = TagCloud('#skillSphere', myTags, {
-  radius: 180,
-  maxSpeed: 'normal',
+  radius: 300, // size
+  maxSpeed: 'fast', // fast is better
   initSpeed: 'normal',
   direction: 135,
   keep: true
 });
+
+// js to track the current section and update the navigation
+
+const sections = document.querySelectorAll('.page-section');
+const navLinks = document.querySelectorAll('.nav-icon');
+
+window.addEventListener('scroll', () => {
+  let current = '';
+
+  sections.forEach(section => {
+    const sectionTop = section.offsetTop;
+    if (pageYOffset >= sectionTop - 60) {
+      current = section.getAttribute('id');
+    }
+  });
+
+  navLinks.forEach(link => {
+    link.classList.remove('active');
+    if (link.getAttribute('href') === `#${current}`) {
+      link.classList.add('active');
+    }
+  });
+});
+
 
 
 

@@ -1,10 +1,65 @@
 /* includes font */
 body {
+    height: 100%;
     margin: 0;
     font-family: 'JetBrains Mono', monospace;
+    scroll-snap-type: y mandatory;
     scroll-behavior: smooth;
     transition: background 1s ease;
+    overflow-y: scroll;
+    padding: 0;
 }
+/*Below is the css for the side bar to scroll and snap to certain sections of the page */
+
+.page-section {
+  height: 100vh;
+  scroll-snap-align: start;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Full-page scroll layout */
+/*html, body {*/
+/*  height: 100%;*/
+/*  scroll-snap-type: y mandatory;*/
+/*  scroll-behavior: smooth;*/
+/*  overflow-y: scroll;*/
+/*  margin: 0;*/
+/*  padding: 0;*/
+/*}*/
+
+
+/* Side nav styling */
+.side-nav {
+  position: fixed;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  z-index: 999;
+}
+
+.nav-icon {
+  font-size: 24px;
+  text-decoration: none;
+  color: #999;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.nav-icon.active {
+  color: #00ffe7;
+  transform: scale(1.4);
+}
+
+
+
+
+
+
+
 /* section boxes in index */
 section {
     min-height: 100vh;
@@ -116,7 +171,6 @@ h1, p {
 
 
 /*####################################################################################*/
-
 .floating-icons a img {
     width: 32px;
     height: 32px;
@@ -189,6 +243,8 @@ h1, p {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /*adds a clean shadow */
 }
 /*sphere animation*/
+/* My floating tech stack */
+
 .skills-container {
     display: flex;
     flex-wrap: wrap;

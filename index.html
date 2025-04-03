@@ -7,9 +7,21 @@
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script src="https://cdn.jsdelivr.net/npm/TagCloud@2.2.0/dist/TagCloud.min.js"></script> <!-- library for sphere animation-->
-
 </head>
+
+
 <body>
+
+<!--///////////////////////////////////////////////-->
+  <!-- Side Nav -->
+  <nav class="side-nav">
+    <a href="#intro" class="nav-icon active">🏠</a>
+    <a href="#sidestep" class="nav-icon">🧠</a>
+    <a href="#skills-experience" class="nav-icon">💻</a>
+    <a href="#projects" class="nav-icon">📬</a>
+  </nav>
+
+
     <div class="floating-icons">
         <a href="https://github.com/patrick-fitzs" target="_blank">
             <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub">
@@ -20,22 +32,26 @@
     </div>
 
 <!-- floating button for cv download -->
-<div class="floating-sidebar">
-  <a href="imgdumpster/PatrickCV2025_02.pdf" download id="cvButton" title="Download My CV">
-    <img src="imgdumpster/resume.gif" alt="CV Icon" class="cv-icon">
-    <span class="tooltip">Check out my CV here!</span>
-  </a>
-</div>
+    <div class="floating-sidebar">
+        <a href="imgdumpster/PatrickCV2025_02.pdf" download id="cvButton" title="Download My CV">
+            <img src="imgdumpster/resume.gif" alt="CV Icon" class="cv-icon">
+            <span class="tooltip">Check out my CV here!</span>
+        </a>
+    </div>
 
-    <section class="intro">
-        <!-- Skills sphere-->
+
+<!-- INTRO SECTION-->
+    <section id="intro" class="intro page-section">
         <h1 class="sectionHeadings">Welcome!</h1>
         <p>Hello, my name is Patrick.</p>
         <p>This is my personal portfolio website.</p>
         <p>Still a work in progress, but Rome wasn't built in a day now was it ‍️👷‍♂️️</p>
     </section>
 
-    <section class="sideStep">
+
+<!-- sidestep SECTION-->
+
+    <section id="sidestep" class="sideStep page-section">
         <h2 class="sectionHeadings">What I like to do in my spare time</h2>
         <a href="https://leetcode.com/u/patrickfitzs11/" target="_blank">
             <img src="imgdumpster/leetcode.svg" alt="leetcode" class="leetcode">
@@ -52,11 +68,11 @@
             </p>
         </div>
         <p>P.s.... gym, travel, and eat food (of course).</p>
-
     </section>
 
 
-    <section class="skills-experience">
+
+    <section id="skills-experience" class="skills-experience page-section">
         <div class="skills-container">
             <!-- LEFT: Text -->
             <div class="skills-text">
@@ -74,11 +90,15 @@
                 </p>
             </div>
             <!-- RIGHT: Sphere -->
+            <!-- Skills sphere-->
             <div class="skill-sphere" id="skillSphere"></div>
+
         </div>
     </section>
 
-    <section class="projects">
+
+
+    <section id="projects" class="projects page-section">
         <h2 class="sectionHeadings">My Projects</h2>
 
         <div class="project-item">
