@@ -30,16 +30,19 @@ body {
 /*}*/
 
 
-/* Side nav styling */
+/* #################### Side nav styling #################### */
 .side-nav {
   position: fixed;
-  top: 50%;
-  left: 20px;
-  transform: translateY(-50%);
+  top: 0;
+  left: 10px;
+  height: 100vh;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  align-items: center;
+  justify-content: flex-start; /* Make sure children stack from the top */
+  padding-top: 10px;
   z-index: 999;
+  background: none;
 }
 
 .nav-icon {
@@ -50,11 +53,30 @@ body {
 }
 
 .nav-icon.active {
-  color: #00ffe7;
-  transform: scale(1.4);
+    transform: scale(1.4);
+    text-shadow: 0 0 10px white;
 }
 
+.nav-icon:hover {
+    transform: scale(1.4);
+    text-shadow: 0 0 10px white;
+}
 
+.nav-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 300px; /* This pushes icons down from the initials */
+  gap: 20px;
+}
+
+.nav-initials {
+  font-size: 16px;
+  font-weight: bold;
+  color: gray;
+  font-family: 'JetBrains Mono', monospace;
+  margin-bottom: 10px;
+}
 
 
 
