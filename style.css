@@ -44,7 +44,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start; /* Make sure children stack from the top */
+  justify-content: flex-start;
   padding-top: 10px;
   z-index: 999;
   background: none;
@@ -378,3 +378,15 @@ body {
 }
 
 /*####################################################################################*/
+/* CSS for particles.js background */
+#particles-js {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* remember neg1 to put behind everything*/
+  top: 0;
+  left: 0;
+  background-color: cadetblue; /* dark night ish blue */
+}
+
+
